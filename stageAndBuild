@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Remember to add yourself to docker group
+# if running docker for the first time
+# and logout and login again
+# sudo usermod -a -G docker $USER
+
+sbt clean stage && docker build -t play-hello-world-docker .
