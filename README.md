@@ -1,4 +1,4 @@
-# play-hello-world-docker
+# FIZZ BUZZ BACKEND
 
 Fizzbuzz-game REST API example.
 
@@ -7,7 +7,7 @@ Fizzbuzz-game REST API example.
 Live demo running at: [fizzbuzz.tero.jaakko.la](https://fizzbuzz.tero.jaakko.la)
 To run the app you need to setup a database connection.
 
-Create game:
+### Create game:
 ```start``` and ```end``` are optional. 
 ```
 curl -i -X POST \
@@ -20,17 +20,17 @@ curl -i -X POST \
 }' \
  'https://fizzbuzz.tero.jaakko.la/v1/fizz/games'
 ```
-List games:
+### List games:
 ```
 curl -i -X GET \
  'https://https:/fizzbuzz.tero.jaakko.la/v1/fizz/games'
 ```
-Find a specifig game:
+### Find a specifig game:
 ```
 curl -i -X GET \
  'http://fizzbuzz.tero.jaakko.la/fizz/games/3'
 ```
-Guessing number:
+### Guessing number:
 (case insensitive, returns updated state)
 ```
 curl -i -X PATCH \
